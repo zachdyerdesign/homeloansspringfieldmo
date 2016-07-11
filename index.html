@@ -1,207 +1,220 @@
 ---
 layout: default
-title: Paula Walker | Home Loans Springfield MO
 ---
 
-<!-- Banner -->
-	<section id="banner">
+<!-- Start Hero -->
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+    <div class="hero-content">
+        <div class="container-fluid">
+            <div class="hero-content-inner">
+                <h1>{{ site.hero.hero_title }}</h1>
+                <p>{{ site.hero.hero_description }}</p>
+            </div>
+        </div>
+    </div>
 
-		<!--
-			".inner" is set up as an inline-block so it automatically expands
-			in both directions to fit whatever's inside it. This means it won't
-			automatically wrap lines, so be sure to use line breaks where
-			appropriate (<br />).
-		-->
-		<div class="inner">
-			<img src="images/logoBanner.png" alt="Missouri Tile logo banner with missouri state."/>
-			<!--<header>
-				<h2>Missouri Tile</h2>
-			</header>
-			<p>This is <strong>Missouri Tile</strong>,
-			<br />
-			a tile showroom in
-			<br />
-			Springfield, Missouri.</p>
-			<footer>
-				<ul class="buttons vertical">
-					<li><a href="gallery.html" class="button fit scrolly">Check Out Gallery</a></li>
-				</ul>
-			</footer>-->
+    <div class="container-fluid">
+        
+        <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
+            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Make an Appointment</h3>
+            <form action="https://getsimpleform.com/messages?form_api_token={{ site.api_token }}" method="post">
+                <div class="form-field">
+                    <input name="name" type="text" placeholder="Name" required>
+                </div>
+                <div class="form-field">
+                    <input name="phone" type="tel" placeholder="Phone" required>
+                </div>
+                <div class="form-field">
+                    <input name="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="form-field">
+                    <textarea name="comments" placeholder="Message" required></textarea>
+                </div>
+                <input type="submit" class="btn btn-default" value="Send">
+            </form>
+        </div>
 
-		</div>
+    </div>
+</div>
+<!-- End Hero -->
 
-	</section>
+<!-- Start 3 columns -->
+<div class="three-shade-col">
+    <div class="col-sm-4">
+        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+        <h3>Contact Us</h3>
+        <ul>
+            {% if site.contact.phone %}<li><strong>Phone:</strong> {{ site.contact.phone }}</li>{% endif %}
+            {% if site.contact.emergency %}<li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>{% endif %}
+            {% if site.contact.email %}<li><strong>Email:</strong> {{ site.contact.email }}</li>{% endif %}
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
+        <h3>Opening Hours</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Monday – Friday</td>
+                    <td>{{ site.monday_friday }}</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>{{ site.saturday }}</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>{{ site.sunday }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-4">
+        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+        <h3>Location</h3>
+            <p>
+                {{ site.contact.address }}
+            </p>
+    </div>
+</div>
+<!-- End 3 columns -->
 
-<!-- Main -->
-	<article id="main">
+<!-- Start About -->
+<div id="about" class="about">
+    <div class="container-fluid">
+        <h2 class="section-title">About Us</h2>
 
-		<header class="special container">
-			<span class="icon fa-square-o"></span>
-			<h2><strong>Home Loans Springfield MO</strong>
-			<br />
-			With over 25 years in residential
-			<br />
-			real estate management in Southwest Missouri,
-			<br>
-			Paula Walker will make your
-			<br>
-			mortgage lending experience effortless. 
-			</h2>
-			<p><strong>Missouri Tile</strong> is a family owned and operated tile store owned by Chester and Scott Shortt since 2001.
-			<br />
-			Chester and Scott take great pride in their company and their <strong>friendly, knowledgeable, experienced staff</strong>.
-			<br />
-			Our sales staff will gladly help you thru a <strong>large selection</strong> of tiles that will accommodate any budget. </p>
-		</header>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Welcome to DentistSmile</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!</p>
 
-		<!-- One -->
-			<section class="wrapper style2 container special-alt">
-				<div class="row 50%">
-					<div class="8u 12u(narrower)">
+                <div class="media">
+                    <div class="media-left">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                    </div>
+                </div>
 
-						<header>
-							<h2>At Missouri Tile you will feel right at home in our <strong>5,000 square foot showroom</strong>.</h2>
-						</header>
-						<p>Attached to our Showroom is our 30,000 square foot Warehouse that is stocked with approximately 600,000 square feet of a variety of tiles and setting materials.  We also have a special Contractor Sales Department to cater specifically to contractors and builders.</p>
-						<footer>
-							<ul class="buttons">
-								<li><a href="showroom.html" class="button">Check Out Showroom</a></li>
-							</ul>
-						</footer>
+                <div class="media">
+                    <div class="media-left">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                    </div>
+                </div>
 
-					</div>
-					<div class="4u 12u(narrower) important(narrower)">
+                <div class="media">
+                    <div class="media-left">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/about.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About -->
 
-						<ul class="featured-icons">
-							<li><span class="icon fa-square-o"><span class="label">Feature 1</span></span></li>
-							<li><span class="icon fa-square-o"><span class="label">Feature 2</span></span></li>
-							<li><span class="icon fa-square-o"><span class="label">Feature 3</span></span></li>
-							<li><span class="icon fa-square-o"><span class="label">Feature 4</span></span></li>
-							<li><span class="icon fa-square-o"><span class="label">Feature 5</span></span></li>
-							<li><span class="icon fa-square-o"><span class="label">Feature 6</span></span></li>
-						</ul>
+<!-- Start Treatments -->
+<div id="treatments" class="treatments">
+    <div class="container-fluid">
+        <h2 class="section-title">Treatments</h2>
 
-					</div>
-				</div>
-			</section>
+        <div class="row">
+            {% for treatment in site.data.treatments %}
+                <div class="col-sm-6 col-md-4">
+                    <div class="icon-box">
+                        <svg class="icon {{ treatment.icon }}"><use xlink:href="#{{ treatment.icon }}"></use></svg>
+                        <h4>{{ treatment.title }}</h4>
+                        <p>{{ treatment.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- End Treatments -->
 
-		<!-- Two -->
-			<section class="wrapper style1 container special">
-				<div class="row">
-					<div class="4u 12u(narrower)">
+<!-- Start Our team -->
+<div id="team" class="team"> 
+    <h2 class="section-title">Our Team</h2> 
+    <div id="team-carousel">
+    {% for member in site.data.team %}
+        <div class="expandable-box">
+            <div class="expandable-box-top">
+                <img src="{{ site.baseurl }}/img/{{ member.image }}" alt="{{ member.name }}">
+                <h4>{{ member.name }}</h4>
+            </div>
+            <div class="expandable-box-bottom">
+                <a href="mailto:{{ member.email }}" data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
+                </a>
+                <a href="tel:{{ member.phone }}" data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+<!-- End Our team -->
 
-						<section>
-							<span class="icon featured fa-bars"></span>
-							<header>
-								<h3>Underlayments</h3>
-							</header>
-							<p>A strong underlayment is the most important part of the tile installation. There are several options for achieving a sturdy floor underlayment.</p>
-						</section>
+<!-- Start Testimonials -->
+<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
+    <div class="overlay-container">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <div id="testimonial-carousel">
+                {% for testimonial in site.data.testimonials %}
+                    <div class="testimonial-item">
+                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
+                        <blockquote>
+                            <p>{{ testimonial.description }}</p>
+                            <footer>
+                                {{ testimonial.name }}
+                                <small>{{ testimonial.title }}</small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Testimonials -->
 
-					</div>
-					<div class="4u 12u(narrower)">
+<!-- Start Gallery -->
+<div id="gallery" class="gallery">
+        
+    <h2 class="section-title">Gallery</h2>
 
-						<section>
-							<span class="icon featured fa-cogs"></span>
-							<header>
-								<h3>Tools</h3>
-							</header>
-							<p>We have a large selection of wet tile saws &amp; tile cutters. Our Stone Tile Tools also features diamond blades, jamb saws, toe kick saws, diamond hole saws, &amp; more.</p>
-						</section>
+    {% for images in site.data.gallery %}
+        <a href="{{ site.baseurl }}/img/gallery/large/{{ images.image_large }}" class="gallery-item expandable-box image-link">
+            <div class="expandable-box-top">
+                <img src="{{ site.baseurl }}/img/gallery/thumb/{{ images.image_thumb }}" alt="{{ images.image_alt }}">
+            </div>
+            <div class="expandable-box-bottom">
+                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
+            </div>
+        </a>
+    {% endfor %}
 
-					</div>
-					<div class="4u 12u(narrower)">
+</div>
+<!-- End Gallery -->
 
-						<section>
-							<span class="icon featured fa-tint"></span>
-							<header>
-								<h3>Shower Systems</h3>
-							</header>
-							<p>Our Shower System is a fully bonded waterproofing system for tiled shower installations, designed to control moisture independently of the tile covering, while creating a long-lasting shower. </p>
-						</section>
-
-					</div>
-				</div>
-			</section>
-
-		<!-- Three -->
-			<section class="wrapper style3 container special">
-
-				<header class="major">
-					<h2>Check out our large selection of <strong>beautiful tile</strong></h2>
-				</header>
-
-				<div class="row">
-					<div class="6u 12u(narrower)">
-
-						<section>
-							<a href="kitchens.html" class="image featured"><img src="images/kitchens.jpg" alt="" /></a>
-							<header>
-								<h3>Kitchens</h3>
-							</header>
-							<p>The kitchen is the one room in the house that can have several different types of tiles, in different applications, and they all will enhance your kitchen beautifully.</p>
-						</section>
-
-					</div>
-					<div class="6u 12u(narrower)">
-
-						<section>
-							<a href="bathrooms.html" class="image featured"><img src="images/bathroom.jpg" alt="" /></a>
-							<header>
-								<h3>Bathrooms</h3>
-							</header>
-							<p>Tile layout is king in any bathroom renovation. Planning tile layout carefully from the start can aid in everything from framing changes to niche locations to fixture locations to lighting locations.</p>
-						</section>
-
-					</div>
-				</div>
-				<div class="row">
-					<div class="6u 12u(narrower)">
-
-						<section>
-							<a href="outdoors.html" class="image featured"><img src="images/outdoor.jpg" alt="" /></a>
-							<header>
-								<h3>Outdoor</h3>
-							</header>
-							<p>Thanks to modern materials, tile is now a durable and long-lasting option for exterior concrete patios–even in cold climates.</p>
-						</section>
-
-					</div>
-					<div class="6u 12u(narrower)">
-
-						<section>
-							<a href="commercial.html" class="image featured"><img src="images/commercial.jpg" alt="" /></a>
-							<header>
-								<h3>Commercial</h3>
-							</header>
-							<p>Commercial tile is long lasting, durable, and easy to clean and maintain. Commercial tile is safe and can help preserve environment quality. </p>
-						</section>
-
-					</div>
-				</div>
-
-				<footer class="major">
-					<ul class="buttons">
-						<li><a href="products.html" class="button">See More</a></li>
-					</ul>
-				</footer>
-
-			</section>
-
-	</article>
-
-<!-- CTA -->
-	<section id="cta">
-
-		<header>
-			<h2>Ready to do build your <strong>dream</strong>?</h2>
-			<p>Call us or come out to our showroom in Springfield, Missouri.</p>
-		</header>
-		<footer>
-			<ul class="buttons">
-				<li><a href="contact.html" class="button special">Contact Us</a></li>
-				<li><a href="contact.html" class="button">Find Us</a></li>
-			</ul>
-		</footer>
-
-	</section>
+<!-- Start Map -->
+<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
+<!-- End Map -->

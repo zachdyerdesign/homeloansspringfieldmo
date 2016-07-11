@@ -1,39 +1,22 @@
-<!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		{% include head.html %}
-	</head>
-	<body class="index">
-		<div id="page-wrapper">
+{% include doctype-head.html %}
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    {% include svg-defs.svg %}
+    <!--[if lt IE 10]>
+        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
+    <![endif]-->
 
-			<!-- Header -->
-			<header id="header" class="">
-			  <h1 id="logo"><img src="images/emblem.png" alt="Home Loans Springfield MO Logo"/> <a href="index.html">Paula <span>Walker</span></a></h1>
-			  {% include nav.html %}
-			</header>
+    {% include header.html %}
+ 
+        {{ content }}
+           
+    {% include footer.html %}
+    
+    {% if site.analytics %}
+        {% include analytics.html %}
+    {% endif %}
 
-
-			{{ content }}
-
-			<!-- Footer -->
-			{% include footer.html %}
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="{{ site.baseurl }}/js/all.min.js"></script>
+</body>
 </html>
