@@ -1,22 +1,24 @@
-{% include doctype-head.html %}
-<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
-    {% include svg-defs.svg %}
-    <!--[if lt IE 10]>
-        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
-    <![endif]-->
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://www.homeloansspringfieldmo.com/ -->
+<html lang="en">
+  {% include head.html %}
+  <body class="home singular page page-id-6 page-template-default">
 
     {% include header.html %}
- 
-        {{ content }}
-           
-    {% include footer.html %}
-    
-    {% if site.analytics %}
-        {% include analytics.html %}
-    {% endif %}
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="{{ site.baseurl }}/js/all.min.js"></script>
-</body>
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="js/masonry.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.settings.js"></script>
+    <script type="text/javascript" src="js/wp-embed.min.js"></script>
+
+  </body>
+>>>>>>> refs/remotes/origin/master
 </html>
