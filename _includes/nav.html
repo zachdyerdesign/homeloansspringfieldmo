@@ -6,13 +6,13 @@
 
       <div class="menu-list-wrapper">
         <ul id="menu-main-menu" class="mythemes-menu-list">
-          <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-34"><a href="/">Home</a></li>
-          <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="/about/">About</a></li>
-          <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="/services/">Services</a></li>
-          <li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="/mortgage-calculator/">Mortgage Calculator</a></li>
-          <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="/category/blog/">Blog</a></li>
-          <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="/contact/">Contact</a></li>
-          <li id="menu-item-57" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57"><a href="tel:417.818.5012">417.818.5012</a></li>
+          <li id="menu-item-34" {% if page.url == "/" %}class="current-menu-item"{% endif; %}><a href="/">Home</a></li>
+          <li id="menu-item-35" {% if page.url == "/about/" %}class="current-menu-item"{% endif; %}><a href="/about/">About</a></li>
+          <li id="menu-item-42" {% if page.url == "/services/" %}class="current-menu-item"{% endif; %}><a href="/services/">Services</a></li>
+          <li id="menu-item-65" {% if page.url == "/mortgage-calulator/" %}class="current-menu-item"{% endif; %}><a href="/mortgage-calculator/">Mortgage Calculator</a></li>
+          <li id="menu-item-50" {% if page.url == "/blog/" %}class="current-menu-item"{% endif; %}><a href="/category/blog/">Blog</a></li>
+          <li id="menu-item-38" {% if page.url == "/contact" %}class="current-menu-item"{% endif; %}><a href="/contact/">Contact</a></li>
+          <li id="menu-item-57"><a href="tel:+1 417 818 5012">417 818 5012</a></li>
         </ul>
       </div>
 
