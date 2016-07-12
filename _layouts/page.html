@@ -1,41 +1,14 @@
-<!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		{% include head.html %}
+---
+layout: default
+---
+<article class="post">
 
-	</head>
-	<body class="no-sidebar blue">
-		<div id="page-wrapper">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
 
-			<!-- Header -->
-				<header id="header">
-          <h1 id="logo"><img src="images/emblem.png" alt="Missouri Tile Logo" width="50"/> <a href="index.html">Missouri <span>Tile</span></a></h1>
-  			  {% include nav.html %}
-				</header>
+  <div class="post-content">
+    {{ content }}
+  </div>
 
-			{{ content }}
-
-			<!-- Footer -->
-			{% include footer.html %}
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-
-
-	</body>
-</html>
+</article>
